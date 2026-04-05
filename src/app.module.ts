@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PostModule } from './post/post.module';
+import { UsersModule } from 'src/users/users.module';
 
 /**
  * The AppModule is the root module of the NestJS application. It imports other modules, declares controllers, and provides services that can be used throughout the application.
@@ -12,7 +13,7 @@ import { PostModule } from './post/post.module';
  * Note: The TypeScript version used in this project is 6.0.2, the module system is NodeNext, the module resolution strategy is NodeNext, and the target version of JavaScript is ES2023. These settings ensure that the code is compatible with modern JavaScript features and can be executed in a Node.js environment.
  */
 @Module({
-  imports: [PostModule],
+  imports: [PostModule , UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
