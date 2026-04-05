@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PostModule } from './post/post.module';
-import { UsersModule } from 'src/users/users.module';
+import { UsersModule } from './users/users.module';
 
 /**
  * The AppModule is the root module of the NestJS application. It imports other modules, declares controllers, and provides services that can be used throughout the application.
